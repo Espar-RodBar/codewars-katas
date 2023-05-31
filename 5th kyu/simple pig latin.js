@@ -10,7 +10,7 @@ function pigIt(str) {
         .map((word) => {
             // guard clause: if is a punctuation mark skip it
             if (!letters.includes(word[0])) return word;
-            return word.slice(0, 1) + word.slice(1) + "ay";
+            return word.slice(1) + word.slice(0, 1) + "ay";
         })
         .join(" ");
     return convertedStr;
